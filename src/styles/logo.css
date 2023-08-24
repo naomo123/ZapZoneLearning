@@ -1,0 +1,249 @@
+
+.container-logo {
+	position: relative;
+	margin: 2em auto;
+	width: 300px;
+	height: 240px;
+}
+
+	.hex {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 6em;
+		height: 10em;
+		border-radius: 0.5em/0.25em;
+		background: #e75710;
+		transition: opacity 0.5s;
+
+    }
+	
+.hair  .hex::before{
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background: inherit;
+        content: "";
+        transform: rotate(60deg);
+    }
+
+    .hex::after{
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background: inherit;
+        content: "";
+        transform: rotate(-60deg);
+        transform: rotate(60deg);
+    }
+	.lines {
+		position: absolute;
+		width: 50px;
+		height: 7.5px;
+		border-radius: 2.5em;
+		background: #f3741b;
+		top: 30px;
+		left: 45px;
+		box-shadow: 95px 0px 0 #f5761a, 20px 15px 0 #ff8303, 95px 15px 0 #8a3324,
+			-10px 30px 0 #f5761a, 25px 30px 0 #f5761a, 125px 30px 0 #f5761a,
+			75px 45px 0 #f3741b, 5px 45px 0 #ff8303, -15px 60px 0 #8a3324,
+			115px 55px 0 #ff8303, 115px 60px+60px 0 #ff8303, 5px 20px+60px 0 #ff8303,
+			95px 7.5px+60px 0 #8a3324, -20px 30px+60px 0 #f5761a, 25px 30px+60px 0 #f5761a,
+			125px 30px+60px 0 #f5761a, 75px 45px+60px 0 #f3741b,
+			5px 45px+60px 0 #ff8303, 25px 60px+60px 0 #8a3324,
+			115px 60px+60px 0 #ff8303;
+	}
+
+	.hair {
+		position: absolute;
+		width: 50px;
+		height: 35px;
+		background: #972305;
+		bottom: 24%;
+		left: 50%;
+		transform: translatex(-50%);
+		border-radius: 2.5em 2.5em 0.5em 0.5em;
+}
+		.hair:before {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 15px;
+			background: #972305;
+			border-radius: 100%;
+			left: 50%;
+			transform: translatex(-50%);
+			bottom: 45%;
+		}
+	
+	.hairshy-girl {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		position: absolute;
+		width: 40px;
+		height: 35px;
+		background: #f9c6c7;
+		border-radius: 1em 4em 2.5em 2.5em;
+    }
+
+    
+		.hairshy-girl:before,
+		.hairshy-girl:after {
+			top: 12.5px;
+			left: 4px;
+			position: absolute;
+			content: "";
+			width: 15px;
+			height: 1px;
+			background: black;
+			box-shadow: 20px 0 0 black;
+			border-radius: 1em;
+		}
+	
+
+	.laptop {
+		position: absolute;
+		width: 90px;
+		height: 60px;
+		background: #1e293b;
+		border: 2px solid #4c505b;
+		border-radius: 0.5em;
+		left: 50%;
+		transform: translatex(-50%) scale(1.2);
+		bottom: 25px;
+    }
+		.laptop:after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			transform: translatex(-50%) translatey(1px);
+			width: 250px;
+			height: 5px;
+			background: #4c505b;
+			top: 100%;
+			border-radius: 2.5em;
+		}
+
+		.logo2 {
+			position: absolute;
+			width: auto;
+			height: auto;
+			font-size: 1.5em;
+			color: orange;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		i {
+			position: absolute;
+		}
+
+		.fa-bitcoin {
+			font-size: 3em;
+			color: #006fc0;
+		}
+
+		.fa-bolt,
+		.fa-react,
+		.fa-sass,
+		.fa-css3-alt,
+		.fa-html5,
+		.fa-js,
+		.fa-react .fa-bug,
+		.fa-music,
+		 .fa-pen-nib,
+		 .fa-palette,
+		 .fa-terminal {
+			font-size: 1em;
+			bottom: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.fa-bolt {
+			color: #ffbe00;
+		}
+
+		.fa-react {
+			color: #61dafb;
+		}
+
+		.fa-css3-alt {
+			right: 17.5px;
+			color: #006fc0;
+		}
+		.fa-js {
+			left: 52.5px;
+			transform: rotate(0deg);
+			color: #efd81d;
+		}
+
+		.fa-bug {
+			font-size: 0.8em;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #992320;
+		}
+
+		.fa-music {
+			font-size: 0.8em;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%) translateX(12.5px);
+			color: #e74b96;
+		}
+
+		.fa-pen-nib {
+			font-size: 0.8em;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%) translateX(-12.5px);
+			color: #7459ae;
+		}
+
+		.fa-palette {
+			font-size: 0.8em;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%) translateX(-23px);
+			color: #40aedf;
+		}
+
+		.fa-terminal {
+			font-size: 0.8em;
+			position: absolute;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%) translateX(25px);
+			color: #51f652;
+		}
+	
+
+	.glass {
+		position: absolute;
+		width: 25px;
+		height: 35px;
+		bottom: 4.75%;
+		left: 8%;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 1.5px 1.5px 20% 20%;
+
+		&:before {
+			content: "";
+			height: 30%;
+			width: 40%;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			bottom: 3%;
+			background-color: #7fcbdd;
+			border-radius: 0 0 30% 30%;
+		}
+	}

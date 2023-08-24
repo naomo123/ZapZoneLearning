@@ -1,0 +1,87 @@
+{
+    "cards": [
+        {
+            "title": "Promotion of Active Learning",
+            "content": "The main goal was to establish an interactive platform that enables individuals to immerse themselves in a journey of active learning, driven by hands-on exercises.",
+            "image":"icono1.svg"
+        },
+        {
+            "title": "Supporting Fellow Learners",
+            "content":"The core purpose was to offer a valuable hub for all those seeking effective, self-directed education, providing guidance and resources to diverse learners.",
+            "image":"icon2.svg"
+        },
+        {
+            "title": "Hands-On Coding",
+            "content": "Experience Lightning Network by typing and executing actual code with syntax highlighting",
+            "image":"icono3.svg"
+         
+        },
+        {
+            "title": "Engaging Experience",
+            "content": "Our passion lies in creating an immersive, understandable learning journey.",
+            "image":"icono4.svg"
+        
+        },
+        {
+            "title": "Igniting Curiosity",
+            "content": " By granting free access and content suitable for learners of varying proficiency levels, the ambition was to ignite curiosity and enthusiasm for continuous learning.",
+            "image":"icono5.svg"
+        
+        }
+
+    ],
+    "list":[
+
+        {
+            "title": "A Spectrum of Cool Subjects",
+            "content": "Through our \"type and execute code yourself\" approach, you'll immerse yourself in practical and interactive learning. Engage with real-time exercises for a deeper understanding."
+            
+        },
+        {
+            "title": "Hands-On Experience",
+            "content":"LightningLearn offers a complete learning immersion. Engage in tasks, challenges, lessons, and quizzes that refine your Lightning Network skill"
+        },
+        {
+            "title": "Real-time Practice Access",
+            "content": "We offer the opportunity to work on real-time exercises and simulations. This allows you to directly apply your knowledge and experience Lightning Network in a secure environment."
+            
+         
+        }
+
+
+    ],
+    "generalContent": {
+        "title": "ZapZone Learning",
+        "btn-start": "START",
+        "question": "Why ZapZone Learning?"
+    },
+    "implementations": [
+        {
+            "title": "Core Lightning (previously c-lightning) ",
+            "content": "is a lightweight, highly customizable and standard compliant implementation of the Lightning Network protocol.",
+            "link": "https://github.com/lightningnetwork/lnd",
+            "linkroute":"/deploy/cln"
+            
+        },
+        {
+            "title": "Eclair",
+            "content": "Eclair (French for Lightning) is a Scala implementation of the Lightning Network.",
+            "link": "https://github.com/ACINQ/eclair#installing-eclair",
+            "linkroute":"/deploy/eclair"
+        },
+        
+
+        {
+            "title": "The Lightning Network Daemon",
+            "content": "is a complete implementation of a Lightning Network node. lnd has several pluggable back-end chain services including btcd (a full-node), bitcoind, and neutrino (a new experimental light client)",
+            "link": "https://github.com/ElementsProject/lightning",
+            "linkroute":"/deploy/lnd"
+        }
+    ],
+    "steps":{
+
+        "Paso 1": "Step 1: Realiza una acción específica.",
+        "Paso 2": "Sigue las instrucciones detalladas.",
+        "Paso 3": "Comprueba el resultado."
+    }
+}

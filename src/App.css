@@ -1,0 +1,102 @@
+:root {
+  --main-bg:#f1ebff;
+  --item-hover: #f9f8fb;
+  --text-title: #5c3377;
+  --main-container-bg: #fff;
+  --container-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --text-color: #404d7a;
+  --text-active-tab:#5c3377;
+  --icon-fill-color:#3e4959;
+  --icon-active:#e5e6ec;
+  --tooltip-bg: #251d33;
+  --border-card-color: #e6e6e6;;
+
+  
+}
+
+body {
+  background-color: var(--main-bg);
+  
+  transition: background-color 0.3s ease-in-out;
+  font-family: "Oxygen Mono", monospace;
+}
+
+body.dark {
+  --main-bg:   #24162f;
+  --item-hover: #1c2339;
+  --text-title: whitesmoke;
+  --main-container-bg: #23032d;
+  --text-color: #fff;
+  --text-preinfo:#dff0ff;
+  --border-card-color: rgba(189, 147, 249, 0.8);
+  --text-active-tab:#fff;
+  --icon-fill-color: #ae85d4;
+  --container-shadow: rgba(#131c31, 0.2) 0px 7px 29px 0px;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.svg-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  z-index: 1; 
+}
+
+.book-svg {
+  width: 100px; 
+  height: 100px; 
+  transition: transform 0.5s ease-in-out;
+  animation: floatAnimation 3s infinite ease-in-out;
+
+}@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.bubble-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  top: -110px;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+.bubble p{font-size: 11px;}
+
+.bubble-link {
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2a123c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.bubble-link:hover {
+  background-color: #1c2339;
+}

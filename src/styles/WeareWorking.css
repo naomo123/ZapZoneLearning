@@ -1,0 +1,26 @@
+/* WeareWorking.css */
+.container-work{
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+  height: 80vh;
+}
+
+.astronaut {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .astronaut {
+    width: 100%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .astronaut {
+    width: 80%; 
+  
+  }
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
+.main {
+
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+
+
+.container-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  height: 100%;
+  overflow-y: auto;
+
+}
+
+.Title {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.container-i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.start-button {
+  margin-bottom: 100px;
+  transition: opacity 0.5s;
+  opacity: 1;
+
+}
+
+.start-button.hide {
+  display: none;
+}
+
+.start-button button {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #755EFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #FAFAFA;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  width: 180px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+  border-color: rgba(189, 147, 249, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(189, 147, 249, 0.8), 0 0 20px rgba(189, 147, 249, 0.8), 0 0 30px rgba(189, 147, 249, 0.8);
+}
+
+@media (max-width: 790px) {
+
+  .logo {
+    width: 250px;
+  height: 250px;
+  }
+
+
+
+}
+
+.expanded-content {
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  gap: 40px;
+  margin-bottom: 100px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section1 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  text-align: center;
+  margin: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff9d;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 25px;
+  width: 250px;
+  box-shadow: 0 0 20px -15px #030380;
+  transition: transform 0.8s;
+
+}
+
+
+.card-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: #fff;
+  border: 10px solid #9db9d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.img-card{
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+
+.card-logo:hover img {
+  transform: rotate(360deg);
+}
+
+
+.section2 {
+  background-color: transparent;
+  width: auto;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.section2 .list {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  content: 	"U+1F680";
+  
+
+
+}
+
+@media  (max-width: 920px) {
+
+  .section2 .list {
+    flex-direction: column;
+    width: 270px;
+
+    justify-content: center;
+  }
+}
+
+.section2 .list__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 13px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.section2 .list__item:nth-of-type(1) {
+  background-color: transparent;
+  border: 2px solid #6f8fb950;
+  box-shadow: 0px 2px 5px rgba(52, 33, 78, 0.493), 0px 0px 10px #6f8fb950;
+}
+
+.section2 .list__item:nth-of-type(2) {
+  background-color: transparent;
+  border: 2px solid #6f8fb950;
+  box-shadow: 0px 2px 5px rgba(52, 33, 78, 0.493), 0px 0px 10px #6f8fb950;
+}
+
+.section2 .list__item:nth-of-type(3) {
+  background-color: transparent;
+  border: 2px solid #6f8fb950;
+  box-shadow: 0px 2px 5px rgba(52, 33, 78, 0.493), 0px 0px 10px #6f8fb950;
+}
+
+
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.list2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.img-card-pre__img {
+  height: 0;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 55%;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.img-card-pre__img--first {
+
+  background-image: url(https://cdn.dribbble.com/users/18730/screenshots/2182635/newshot.png);
+}
+
+.img-card-pre__img--second {
+  background-image: url(https://image.ibb.co/cYsvbw/dribbble.jpg);
+}
+
+.img-card-pre__img--third {
+  background-image: url(https://cdn.dribbble.com/users/103909/screenshots/3671664/sensors-01.jpg);
+}
+
+.img-card-pre__img--fourth {
+  background-image: url(https://cdn.dribbble.com/users/997070/screenshots/4120967/attachments/943230/01-1._Cover_Copy_2x.png);
+}
+
+
+
+.img-card-pre__info {
+  font-size: 11px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 25px 25px 0 25px;
+}
+
+
+.img-card-pre__title {
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 15px 25px;
+}
+
+.img-card-pre:hover .img-card-pre__img {
+  box-shadow: 0px 10px 13px 4px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+  box-shadow: 0px 10px 13px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.titlecards{
+
+  padding-top: 25px;
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+font-size: 18px;
+}
+.txtcards{
+font-size: 10px;
+font-family: 'Roboto', sans-serif;
+color: var(--text-color);
+}
+.titlesect2{
+
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.txtsect2{
+  color: var(--text-color);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}

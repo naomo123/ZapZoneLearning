@@ -1,0 +1,120 @@
+
+.container-general-a{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+  #container-achieve {
+    margin-bottom: 40px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  }
+  #container-achieve h2 {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+  }
+  @media screen and (min-width: 600px) {
+    #container-achieve .content-achieve {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  #container-achieve .achievement {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #container-achieve .achievement .bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(30, 30, 30, 0.05);
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  #container-achieve .achievement .bar .img-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+  }
+  #container-achieve .achievement .bar .img-box i {
+    color: #fff;
+  }
+  #container-achieve .achievement .bar p {
+    position: relative;
+    z-index: 1;
+    color: #1e1e1e;
+    font-size: 18px;
+    font-family: "Open Sans", arial, sans-serif;
+  }
+  #container-achieve .achievement .bar .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(30deg, #64a9ff, #93ffa0);
+    border-radius: 20px;
+    transition: 1s ease;
+  }
+  #container-achieve .achievement .bar .progress.running {
+    animation-name: fill;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: "infinite";
+    animation-fill-mode: forwards;
+  }
+  
+  #button-bar {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 600px) {
+    #button-bar {
+      grid-gap: 40px;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  #button-bar button {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  }
+  #button-bar button:hover, #button-bar button:active, #button-bar button:focus {
+    cursor: pointer;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  #button-bar button i {
+    font-size: 1rem;
+  }
+  
+  .reference {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    font-family: arial;
+    text-decoration: none;
+  }

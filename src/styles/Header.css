@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color:var(--container-shadow);
+  height: fit-content;
+}
+
+.brand {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2px;
+  margin: 10px;
+  padding: 5px;
+  gap: 10px;
+}
+
+.titulo {
+
+
+  font-size: 20px;
+  color: var(--text-title);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.language-button {
+  background-color: transparent;
+  color:  var(--text-color);
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  color: #8198ae;
+  margin-right: 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.language-button:hover {
+  background-color: #ffffff9d;
+  color: #2f166b;
+}
+@media (max-width:400px) {
+  .titulo{
+    font-size: 16px;
+  }
+}
+@media (max-width: 790px) {
+
+  .imgr {
+    
+    height: 150px;
+  }
+
+
+
+}.imgr {
+  height: 80px;
+  transition: transform 0.5s ease-in-out;
+}
+
