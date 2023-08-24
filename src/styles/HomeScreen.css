@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
 .main {
 
-  padding: 2rem;
+  padding: 20px;
   height: 100%;
   width: 100%;
   transition: all 0.5s;

@@ -45,7 +45,7 @@ const HomeScreen = () => {
                )) }
                 </ul>
               </div>
-              <h1 className="title">What We Do?</h1>
+              <h1 className="title">Fostering Dynamic Learning: Our Platform's Key Aspects</h1>
               <div className="section1">
             
                 <div className='cards'>
@@ -83,33 +83,6 @@ const HomeScreen = () => {
 
 
 
-                  <a href="#" className="img-card-pre ">
-                    <div className="img-card-pre__img img-card-pre__img--second"></div>
-                    <h2 className="img-card-pre__info">
-                      <span className="img-card-pre__cat">Pricing • </span><span className="img-card-pre__aut"> by Josh Ford</span> <span className="img-card-pre__date"> - 5 mins read</span>
-                    </h2>
-                    <h1 className="img-card-pre__title">Rich Thornett & Dan Coderholm about Dribbble in early 2009<span className="img-card-pre__arrow--purple">→</span></h1>
-                  </a>
-
-
-
-                  <a href="#" className="img-card-pre ">
-                    <div className="img-card-pre__img img-card-pre__img--fourth"></div>
-                    <h2 className="img-card-pre__info">
-                      <span className="img-card-pre__cat">Success Stories • </span><span className="img-card-pre__aut"> by Andrew Lincoln</span> <span className="img-card-pre__date"> - 5 mins read</span>
-                    </h2>
-                    <h1 className="img-card-pre__title">Steward Butterfield told us about his startup Slack<span className="img-card-pre__arrow--purple"> →</span></h1>
-                  </a>
-
-
-
-                  <a href="#" className="img-card-pre ">
-                    <div className="img-card-pre__img img-card-pre__img--third"></div>
-                    <h2 className="img-card-pre__info">
-                      <span className="img-card-pre__cat">Protips • </span><span className="img-card-pre__aut"> by Ann Timothy</span> <span className="img-card-pre__date"> - 5 mins read</span>
-                    </h2>
-                    <h1 className="img-card-pre__title">How to improve analytics using few tools in Bricks<span className="img-card-pre__arrow--purple"> →</span></h1>
-                  </a>
                 </div>
 
               </div>

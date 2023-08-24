@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
+
 :root {
   --main-bg:#f1ebff;
   --item-hover: #f9f8fb;
@@ -18,7 +20,7 @@ body {
   background-color: var(--main-bg);
   
   transition: background-color 0.3s ease-in-out;
-  font-family: "Oxygen Mono", monospace;
+
 }
 
 body.dark {
@@ -75,13 +77,13 @@ body.dark {
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 16px;
-  top: -110px;
+  top: -150px;
   z-index: 1000;
   left: 50%;
-  transform: translateX(-55%);
+  transform: translateX(-50%);
 }
 
-.bubble p{font-size: 11px;}
+.bubble p{font-size: 11px;   font-family: 'Roboto', sans-serif;}
 
 .bubble-link {
   display: inline-block;
@@ -91,6 +93,7 @@ body.dark {
   background-color: #2a123c;
   color: #fff;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   border: none;
   cursor: pointer;

@@ -65,8 +65,8 @@ function App() {
             </button>
             {showBubble && (
               <div className="bubble">
-                <p>Tienes Dudas?</p>
-                <Link to="/glossary" className="bubble-link">Glossary</Link>
+                <p>Wondering about a term?</p>
+                <Link to="/glossary" className="bubble-link">Go to glossary</Link>
               </div>
             )}
           </div>

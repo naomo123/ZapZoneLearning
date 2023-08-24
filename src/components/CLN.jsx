@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/CLN.css';
 import presponses from '../assets/predefinedResponses.json';
 import stepsjson from '../assets/content.json';
+import WeareWorking from './WeareWorking';
 
 const CLN = () => {
     const [input, setInput] = useState('');
@@ -17,7 +18,7 @@ const CLN = () => {
 
     const handleCheckboxChange = (event) => {
         setIsChecked(event.target.checked);
-        {console.log(isChecked)}
+        { console.log(isChecked) }
     };
 
     const navigate = useNavigate();
@@ -88,7 +89,7 @@ const CLN = () => {
         <div className="container">
 
             <div class="tabs">
-                <input type="radio" id="tab1" name="tab-control" checked={isChecked} onChange={handleCheckboxChange}  />
+                <input type="radio" id="tab1" name="tab-control" checked={isChecked} onChange={handleCheckboxChange} />
                 <input type="radio" id="tab2" name="tab-control" />
                 <input type="radio" id="tab3" name="tab-control" />
                 <input type="radio" id="tab4" name="tab-control" />
@@ -102,7 +103,7 @@ const CLN = () => {
                 <div className="slider"><div className="indicator"></div></div>
                 <div className="content">
                     <section className='sectionReg'>
-                  
+
                         <div className="steps">
                             <div className="step">{steps[currentStep]}</div>
 
@@ -155,14 +156,14 @@ const CLN = () => {
                         </div>
                     </section>
                     <section className='sectionTest'>
-                        <h2>Delivery Contents</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
+                    <WeareWorking/>
+                        </section>
                     <section className='sectionSig'>
-                        <h2>Shipping</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
+                    <WeareWorking/>
+                        </section>
                     <section className='sectionMain'>
-                        <h2>Returns</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                    <WeareWorking/>
+                        </section>
                 </div>
             </div>
 

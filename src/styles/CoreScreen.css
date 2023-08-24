@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
+
+
+.title-table {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.table-container {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.comparison-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(189, 147, 249, 0.3), 0 0 20px rgba(189, 147, 249, 0.2), 0 0 30px rgba(189, 147, 249, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 10px;
+    border: none;
+}
+
+
+
+.comparison-table td {
+    text-align: center;
+}
+
+
+
+
+
+.accordion-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-summary {
+    background-color: #f2f2f2;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-summary::after {
+    content: url('../assets/PLus.svg');
+    width: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion[open] .accordion-summary::after {
+    content: url('../assets/minus.svg');
+    /* Icono de minus abierto */
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    padding: 10px;
+}

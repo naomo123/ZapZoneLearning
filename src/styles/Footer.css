@@ -1,6 +1,6 @@
 
 .footer-container {
-  position: relative; /* Add this to position the wave and footer content together */
+  position: relative; 
 
   width: 100%;
   height: auto;
@@ -9,7 +9,7 @@
 .page-footer {
   text-align: center;
   background-color: transparent;
-  padding: 20px 0; /* Ajusta el relleno superior e inferior según tus necesidades */
+  padding: 20px 0; 
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -18,11 +18,11 @@
 
 .page-footer p {
   margin: 0;
+  text-align: center;
   color: #777;
 }
 
 
-  /* Ondas */
 .wave-wrapper {
   height: auto;
   width: 100%;
@@ -52,7 +52,7 @@
 }
 
 .wave .parallax > use:nth-child(3) {
-  animation-delay: -2s; /* Fixed the delay value */
+  animation-delay: -2s; 
   animation-duration: 4s;
   transform: translate(-65px, 0%);
 }
@@ -63,7 +63,6 @@
   transform: translate(-65px, 0%);
 }
 
-/* Keyframes para la animación de las olas */
 @keyframes move-forever {
   0% {
     transform: translateX(-90px);
