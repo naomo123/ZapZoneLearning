@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import giphy from '../assets/bitcoin-03.gif';
+import giphy from '../assets/icono2.svg';
 import '../styles/SplashScreen.css';
 
 const SplashScreen = () => {
@@ -8,15 +8,16 @@ const SplashScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
-    <div className="fond" style={{ display: isLoading ? 'block' : 'none' }}>
-      <div className="img_div">
-        <img src={giphy} alt="GIF" />
-      </div>
-    </div>
+    <div className="fond">
+    {isLoading && (
+      <img className='imgsplash' src={giphy} alt="img" />
+    )}
+  </div>
+  
   );
 };
 

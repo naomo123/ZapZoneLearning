@@ -18,9 +18,7 @@ const Footer = () => {
         </svg>
 
       </div>
-      <footer className="page-footer">
-        <p>&copy;  Copyright © 2023 ZapZone Learning.</p>
-      </footer>
+    
     </div>
   );
 }

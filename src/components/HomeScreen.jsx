@@ -8,6 +8,8 @@ import icono2 from '../assets/icon2.svg';
 import icono3 from '../assets/icono3.svg';
 import icono4 from '../assets/icono4.svg';
 import icono5 from '../assets/icono5.svg';
+import rsc1 from '../assets/whitepaper.png';
+import rsclinux from '../assets/linux.webp'
 
 const HomeScreen = () => {
   const [buttonVisible, setButtonVisible] = useState(true);
@@ -23,7 +25,7 @@ const HomeScreen = () => {
     <main className="main">
       <div className={`container-i ${expanded ? 'expanded' : ''}`}>
         <div className='rocket'>
-          <img src={logo} alt="ZapZone Learning Logo" className="logo" /> 
+          <img src={logo} alt="ZapZone Learning Logo" className="logo" />
 
 
         </div>
@@ -34,20 +36,20 @@ const HomeScreen = () => {
 
           <>
             <div className="expanded-content">
-            <h1 className="title">Key Features</h1>
+              <h1 className="title">Key Features</h1>
               <div className='section2'>
                 <ul className="list">
                   {content.list.map((list, index) => (
-                  <li className="list__item" key={index}>
-                    <h1 className="titlesect2">{list.title}</h1>
-                    <p className="txtsect2">{list.content}</p>
-                  </li>
-               )) }
+                    <li className="list__item" key={index}>
+                      <h1 className="titlesect2">{list.title}</h1>
+                      <p className="txtsect2">{list.content}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <h1 className="title">Fostering Dynamic Learning: Our Platform's Key Aspects</h1>
               <div className="section1">
-            
+
                 <div className='cards'>
                   {content.cards.map((card, index) => (
                     <div className="card" key={index}>
@@ -67,22 +69,18 @@ const HomeScreen = () => {
 
               <div className="section3">
                 <div className='text-row'> <h1 className="title">
-                  Our blog
+                  Useful Links
                 </h1>
-                  <h2 className="title">Sneak peeks from our writings</h2>
                 </div>
                 <div className='list2'>
-
-                  <a href="#" className="img-card-pre ">
-                    <div className="img-card-pre__img img-card-pre__img--first"></div>
-                    <h2 className="img-card-pre__info">
-                      <span className="img-card-pre__cat">Protips • </span><span className="img-card-pre__aut"> by Ann Timothy</span> <span className="img-card-pre__date"> - 5 mins read</span>
-                    </h2>
-                    <h1 className="img-card-pre__title">How to improve analytics using few tools in Bricks<span className="img-card-pre__arrow--purple"> →</span></h1>
-                  </a>
-
-
-
+                  {content.resources.map((resource, index) => (
+                    <a key={index} href={resource.content} className="img-card-pre">
+                      <img className='card-img-rsc' src={index === 0 ? rsc1 : rsclinux} alt={`Resource ${index}`} />
+                      <h1 className="img-card-pre__title">
+                        {resource.title}
+                      </h1>
+                    </a>
+                  ))}
                 </div>
 
               </div>

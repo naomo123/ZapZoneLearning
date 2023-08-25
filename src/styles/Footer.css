@@ -1,26 +1,11 @@
 
 .footer-container {
   position: relative; 
-
-  width: 100%;
-  height: auto;
-}
-
-.page-footer {
-  text-align: center;
-  background-color: transparent;
-  padding: 20px 0; 
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+ 
 }
 
 
-.page-footer p {
-  margin: 0;
-  text-align: center;
-  color: #777;
-}
+
 
 
 .wave-wrapper {
@@ -28,6 +13,7 @@
   width: 100%;
   position: fixed;
   bottom: 0px;
+  padding-top: -4 00px; 
 }
 
 .wave {

@@ -29,7 +29,7 @@ function App() {
     if (showSplash) {
       setTimeout(() => {
         setShowSplash(false);
-      }, 3000);
+      }, 4000);
     }
   }, [showSplash]);
 

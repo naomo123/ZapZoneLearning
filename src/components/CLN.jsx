@@ -60,7 +60,7 @@ const CLN = () => {
                         clearInterval(typingInterval);
                         setIsTypingResponse(false);
                     }
-                }, 50);
+                },10);
             } else {
                 const newOutput = [...output, `root@linux:/ ${trimmedInput}`, <span className="error"> Comando no reconocido: ${trimmedInput} </span>];
                 setOutput(newOutput);
@@ -162,7 +162,7 @@ const CLN = () => {
                     <WeareWorking/>
                         </section>
                     <section className='sectionMain'>
-                    <WeareWorking/>
+                           <WeareWorking/>
                         </section>
                 </div>
             </div>
