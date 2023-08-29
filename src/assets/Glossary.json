@@ -1,144 +1,144 @@
-{
-  "terms": [
-    {
-      "title": "Announcement",
-      "definition": "A gossip message sent between peers intended to aid the discovery of a channel or a node."
-    },
-    {
-      "title": "chain_hash",
-      "definition": "The uniquely identifying hash of the target blockchain (usually the genesis hash). This allows nodes to create and reference channels on several blockchains. Nodes are to ignore any messages that reference a chain_hash that are unknown to them. Unlike bitcoin-cli, the hash is not reversed but is used directly."
-    },
-    {
-      "title": "main_chain_bitcoin_chain_hash",
-      "definition": "The uniquely identifying hash of the target blockchain (usually the genesis hash). This allows nodes to create and reference channels on several blockchains."
-    },
-    {
-      "title": "Channel",
-      "definition": "A fast, off-chain method of mutual exchange between two peers. To transact funds, peers exchange signatures to create an updated commitment transaction."
-    },
-    {
-      "title": "Closing_transaction",
-      "definition": "A transaction generated as part of a mutual close. A closing transaction is similar to a commitment transaction, but with no pending payments."
-    },
-    {
-      "title": "Commitment_number",
-      "definition": "A 48-bit incrementing counter for each commitment transaction; counters are independent for each peer in the channel and start at 0."
-    },
-    {
-      "title": "Commitment_revocation_private_key",
-      "definition": "Every commitment transaction has a unique commitment revocation private-key value that allows the other peer to spend all outputs immediately: revealing this key is how old commitment transactions are revoked."
-    },
-    {
-      "title": "Commitment_transaction",
-      "definition": "A transaction that spends the funding transaction. Each peer holds the other peer's signature for this transaction, so that each always has a commitment transaction that it can spend. After a new commitment transaction is negotiated, the old one is revoked."
-    },
-    {
-      "title": "Fail_the_channel",
-      "definition": "This is a forced close of the channel. Usually it requires signing and broadcasting the latest commitment transaction."
-    },
-    {
-      "title": "Close_the_connection",
-      "definition": "This means closing communication with the peer (such as closing the TCP socket). It does not imply closing any channels with the peer."
-    },
-    {
-      "title": "Final_node",
-      "definition": "The final recipient of a packet that is routing a payment from an origin node through some number of hops."
-    },
-    {
-      "title": "Funding_transaction",
-      "definition": "An irreversible on-chain transaction that pays to both peers on a channel. It can only be spent by mutual consent."
-    },
-    {
-      "title": "Hop",
-      "definition": "A node. Generally, an intermediate node lying between an origin node and a final node."
-    },
-    {
-      "title": "HTLC",
-      "definition": "Hashed Time Locked Contract. A conditional payment between two peers."
-    },
-    {
-      "title": "Invoice",
-      "definition": "A request for funds on the Lightning Network, possibly including payment type, payment amount, expiry, and other information."
-    },
-    {
-      "title": "It's_ok_to_be_odd",
-      "definition": "A rule applied to some numeric fields that indicates either optional or compulsory support for features."
-    },
-    {
-      "title": "MSAT",
-      "definition": "A millisatoshi, often used as a field name."
-    },
-    {
-      "title": "Mutual_close",
-      "definition": "A cooperative close of a channel, accomplished by broadcasting an unconditional spend of the funding transaction with an output to each peer."
-    },
-    {
-      "title": "Node",
-      "definition": "A computer or other device that is part of the Lightning network."
-    },
-    {
-      "title": "Origin_node",
-      "definition": "The node that originates a packet that will route a payment through some number of hops to a final node."
-    },
-    {
-      "title": "Outpoint",
-      "definition": "A transaction hash and output index that uniquely identify an unspent transaction output."
-    },
-    {
-      "title": "Payment_hash",
-      "definition": "The HTLC contains the payment hash, which is the hash of the payment preimage."
-    },
-    {
-      "title": "Payment_preimage",
-      "definition": "Proof that payment has been received, held by the final recipient, who is the only person who knows this secret."
-    },
-    {
-      "title": "Peers",
-      "definition": "Two nodes that are in communication with each other."
-    },
-    {
-      "title": "Penalty_transaction",
-      "definition": "A transaction that spends all outputs of a revoked commitment transaction, using the commitment revocation private key."
-    },
-    {
-      "title": "Per-commitment_secret",
-      "definition": "Every commitment transaction derives its keys from a per-commitment secret, which is generated such that the series of per-commitment secrets for all previous commitments can be stored compactly."
-    },
-    {
-      "title": "Processing_node",
-      "definition": "A node that is processing a packet that originated with an origin node and that is being sent toward a final node in order to route a payment."
-    },
-    {
-      "title": "Receiving_node",
-      "definition": "A node that is receiving a message."
-    },
-    {
-      "title": "Receiving_peer",
-      "definition": "A node that is receiving a message from a directly connected peer."
-    },
-    {
-      "title": "Revoked_commitment_transaction",
-      "definition": "An old commitment transaction that has been revoked because a new commitment transaction has been negotiated."
-    },
-    {
-      "title": "Revoked_transaction_close",
-      "definition": "An invalid close of a channel, accomplished by broadcasting a revoked commitment transaction."
-    },
-    {
-      "title": "Route",
-      "definition": "A path across the Lightning Network that enables a payment from an origin node to a final node across one or more hops."
-    },
-    {
-      "title": "Sending_node",
-      "definition": "A node that is sending a message."
-    },
-    {
-      "title": "Sending_peer",
-      "definition": "A node that is sending a message to a directly connected peer."
-    },
-    {
-      "title": "Unilateral_close",
-      "definition": "An uncooperative close of a channel, accomplished by broadcasting a commitment transaction."
-    }
-  ]
-}
+  {
+    "terms": [
+      {
+        "title": "Announcement",
+        "definition": "A gossip message sent between peers intended to aid the discovery of a channel or a node."
+      },
+      {
+        "title": "chain_hash",
+        "definition": "The uniquely identifying hash of the target blockchain (usually the genesis hash). This allows nodes to create and reference channels on several blockchains. Nodes are to ignore any messages that reference a chain_hash that are unknown to them. Unlike bitcoin-cli, the hash is not reversed but is used directly."
+      },
+      {
+        "title": "main_chain_bitcoin_chain_hash",
+        "definition": "The uniquely identifying hash of the target blockchain (usually the genesis hash). This allows nodes to create and reference channels on several blockchains."
+      },
+      {
+        "title": "Channel",
+        "definition": "A fast, off-chain method of mutual exchange between two peers. To transact funds, peers exchange signatures to create an updated commitment transaction."
+      },
+      {
+        "title": "Closing_transaction",
+        "definition": "A transaction generated as part of a mutual close. A closing transaction is similar to a commitment transaction, but with no pending payments."
+      },
+      {
+        "title": "Commitment_number",
+        "definition": "A 48-bit incrementing counter for each commitment transaction; counters are independent for each peer in the channel and start at 0."
+      },
+      {
+        "title": "Commitment_revocation_private_key",
+        "definition": "Every commitment transaction has a unique commitment revocation private-key value that allows the other peer to spend all outputs immediately: revealing this key is how old commitment transactions are revoked."
+      },
+      {
+        "title": "Commitment_transaction",
+        "definition": "A transaction that spends the funding transaction. Each peer holds the other peer's signature for this transaction, so that each always has a commitment transaction that it can spend. After a new commitment transaction is negotiated, the old one is revoked."
+      },
+      {
+        "title": "Fail_the_channel",
+        "definition": "This is a forced close of the channel. Usually it requires signing and broadcasting the latest commitment transaction."
+      },
+      {
+        "title": "Close_the_connection",
+        "definition": "This means closing communication with the peer (such as closing the TCP socket). It does not imply closing any channels with the peer."
+      },
+      {
+        "title": "Final_node",
+        "definition": "The final recipient of a packet that is routing a payment from an origin node through some number of hops."
+      },
+      {
+        "title": "Funding_transaction",
+        "definition": "An irreversible on-chain transaction that pays to both peers on a channel. It can only be spent by mutual consent."
+      },
+      {
+        "title": "Hop",
+        "definition": "A node. Generally, an intermediate node lying between an origin node and a final node."
+      },
+      {
+        "title": "HTLC",
+        "definition": "Hashed Time Locked Contract. A conditional payment between two peers."
+      },
+      {
+        "title": "Invoice",
+        "definition": "A request for funds on the Lightning Network, possibly including payment type, payment amount, expiry, and other information."
+      },
+      {
+        "title": "It's_ok_to_be_odd",
+        "definition": "A rule applied to some numeric fields that indicates either optional or compulsory support for features."
+      },
+      {
+        "title": "MSAT",
+        "definition": "A millisatoshi, often used as a field name."
+      },
+      {
+        "title": "Mutual_close",
+        "definition": "A cooperative close of a channel, accomplished by broadcasting an unconditional spend of the funding transaction with an output to each peer."
+      },
+      {
+        "title": "Node",
+        "definition": "A computer or other device that is part of the Lightning network."
+      },
+      {
+        "title": "Origin_node",
+        "definition": "The node that originates a packet that will route a payment through some number of hops to a final node."
+      },
+      {
+        "title": "Outpoint",
+        "definition": "A transaction hash and output index that uniquely identify an unspent transaction output."
+      },
+      {
+        "title": "Payment_hash",
+        "definition": "The HTLC contains the payment hash, which is the hash of the payment preimage."
+      },
+      {
+        "title": "Payment_preimage",
+        "definition": "Proof that payment has been received, held by the final recipient, who is the only person who knows this secret."
+      },
+      {
+        "title": "Peers",
+        "definition": "Two nodes that are in communication with each other."
+      },
+      {
+        "title": "Penalty_transaction",
+        "definition": "A transaction that spends all outputs of a revoked commitment transaction, using the commitment revocation private key."
+      },
+      {
+        "title": "Per-commitment_secret",
+        "definition": "Every commitment transaction derives its keys from a per-commitment secret, which is generated such that the series of per-commitment secrets for all previous commitments can be stored compactly."
+      },
+      {
+        "title": "Processing_node",
+        "definition": "A node that is processing a packet that originated with an origin node and that is being sent toward a final node in order to route a payment."
+      },
+      {
+        "title": "Receiving_node",
+        "definition": "A node that is receiving a message."
+      },
+      {
+        "title": "Receiving_peer",
+        "definition": "A node that is receiving a message from a directly connected peer."
+      },
+      {
+        "title": "Revoked_commitment_transaction",
+        "definition": "An old commitment transaction that has been revoked because a new commitment transaction has been negotiated."
+      },
+      {
+        "title": "Revoked_transaction_close",
+        "definition": "An invalid close of a channel, accomplished by broadcasting a revoked commitment transaction."
+      },
+      {
+        "title": "Route",
+        "definition": "A path across the Lightning Network that enables a payment from an origin node to a final node across one or more hops."
+      },
+      {
+        "title": "Sending_node",
+        "definition": "A node that is sending a message."
+      },
+      {
+        "title": "Sending_peer",
+        "definition": "A node that is sending a message to a directly connected peer."
+      },
+      {
+        "title": "Unilateral_close",
+        "definition": "An uncooperative close of a channel, accomplished by broadcasting a commitment transaction."
+      }
+    ]
+  }

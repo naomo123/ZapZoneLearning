@@ -115,7 +115,7 @@ const CLN = () => {
                         <div className="terminal" ref={terminalRef}>
                             {output.map((line, index) => {
                                 const promptLength = 'root@linux:/'.length;
-                                const isResponse = index % 2 === 1; // Check if it's a response line
+                                const isResponse = index % 2 === 1;
                                 const lines = typeof line === 'string' ? line.split('\n') : [line];
 
 

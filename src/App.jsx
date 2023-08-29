@@ -11,18 +11,22 @@ import AchievementBox from './components/AchievementBox';
 import Header from './components/elements/Header';
 import Sidebar from './components/elements/SideBar';
 import Footer from './components/elements/Footer';
-import CLN from './components/CLN'; 
+import CLN from './components/CLN';
 import Eclair from './components/Eclair';
 import LND from './components/LND';
 import helper from './assets/glossary.svg'
 import ChannelSimulator from './components/elements/ChannelSimulator';
+import Chatbot from 'react-chatbot-kit';
+import config from './components/config';
+import MessageParser from './components/MessageParser';
+import ActionProvider from './components/ActionProvider';
 
 import './App.css';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
-  
-  
+
+
   const [showBubble, setShowBubble] = useState(false);
 
   useEffect(() => {
@@ -39,13 +43,13 @@ function App() {
 
   return (
     <div className="app">
-           {showSplash ? (
+      {showSplash ? (
         <SplashScreen />
       ) : (
         <Router>
-        <Header/>
-        
-        <Sidebar/>
+          <Header />
+
+          <Sidebar />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/core" element={<CoreScreen />} />
@@ -53,27 +57,36 @@ function App() {
             <Route path="/pro" element={<ProScreen />} />
             <Route path="/deploy/*" element={<DeployScreen />} />
             <Route path="/deploy/cln" element={<CLN />} />
-            <Route path="/deploy/eclair" element={<Eclair/>} />
-            <Route path="/deploy/lnd" element={<LND/>} />
+            <Route path="/deploy/eclair" element={<Eclair />} />
+            <Route path="/deploy/lnd" element={<LND />} />
             <Route path="/glossary" element={<Glossary />} />
-            <Route path="/achievementbox" element={<AchievementBox/>} />
+            <Route path="/achievementbox" element={<AchievementBox />} />
           </Routes>
-          
+
           <div className="svg-container">
             <button onClick={handleBubbleClick} className="bubble-button">
               <img src={helper} className="book-svg" alt="Rocket" />
+
+
+           
             </button>
+
             {showBubble && (
-              <div className="bubble">
-                <p>Wondering about a term?</p>
-                <Link to="/glossary" className="bubble-link">Go to glossary</Link>
+              <div className='bubble'>
+              <Chatbot
+                config={config}
+                messageParser={MessageParser}
+                actionProvider={ActionProvider}
+              />
               </div>
             )}
-          </div>
+            </div>
+           
+
           <Footer />
         </Router>
-              
-      )}  
+
+      )}
     </div>
   );
 }
