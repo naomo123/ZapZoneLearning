@@ -206,3 +206,25 @@
   width: 40px; 
   height: 40px; 
 }
+.button-outside-sidebar {
+  position: absolute; 
+  top: 50%; 
+  right: 40px; 
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+ .icon-v{
+  width: 20px;
+  height: 35px;
+  fill: var(--icon-fill-color);
+  stroke: var(--icon-fill-color);
+ }
+ 
+ @media (max-width: 768px) {
+.icon-v{
+  width: 20px;
+  height: 35px;
+}
+
+ }

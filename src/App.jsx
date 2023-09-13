@@ -62,7 +62,19 @@ function App() {
               <Route path="/deploy/lnd" element={<LND />} />
               <Route path="/glossary" element={<Glossary />} />
               <Route path="/achievementbox" element={<AchievementBox />} />
+          
+          
+          
             </Routes>
+            {showBubble && (
+            <div className='chatbot-container'>
+              <Chatbot
+                config={config}
+                messageParser={MessageParser}
+                actionProvider={ActionProvider}
+              />
+            </div>
+          )}
 
             <div className="svg-container">
               <button onClick={handleBubbleClick} className="bubble-button">
@@ -71,16 +83,7 @@ function App() {
 
 
               </button>
-
-              {showBubble && (
-                <div className='react-chatbot-kit-chat-container'>
-                  <Chatbot
-                    config={config}
-                    messageParser={MessageParser}
-                    actionProvider={ActionProvider}
-                  />
-                </div>
-              )}
+x
             </div>
 
 
