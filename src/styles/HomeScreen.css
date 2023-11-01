@@ -188,7 +188,7 @@
 
   .section2 .list {
     flex-direction: column;
-    width: 270px;
+    width: 250px;
 
     justify-content: center;
   }

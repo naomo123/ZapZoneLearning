@@ -1,66 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght@100&family=Jost:wght@600&family=Lilita+One&family=Passion+One&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Source+Sans+3&display=swap');
 
 :root {
-  --main-bg:#f1ebff;
+  --main-bg: #f1ebff;
   --item-hover: #f9f8fb;
   --text-title: #5c3377;
   --main-container-bg: #fff;
   --container-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --text-color: #404d7a;
-  --text-active-tab:#5c3377;
-  --icon-fill-color:#3e4959;
-  --icon-active:#e5e6ec;
+  --text-active-tab: #5c3377;
+  --icon-fill-color: #3e4959;
+  --icon-active: #e5e6ec;
   --tooltip-bg: #251d33;
-  --border-card-color: #e6e6e6;;
-
+  --sidebarbck: #fff;
+  --border-card-color: #e6e6e6;
   
+ max-height: 100vh; overflow-y: auto;
 }
 
 body {
   background-color: var(--main-bg);
-  
+
   transition: background-color 0.3s ease-in-out;
 
 }
 
 body.dark {
-  --main-bg:   #24162f;
+  --main-bg: #140023;
   --item-hover: #1c2339;
   --text-title: whitesmoke;
   --main-container-bg: #23032d;
   --text-color: #fff;
-  --text-preinfo:#dff0ff;
+  --text-preinfo: #dff0ff;
   --border-card-color: rgba(189, 147, 249, 0.8);
-  --text-active-tab:#fff;
+  --text-active-tab: #fff;
   --icon-fill-color: #ae85d4;
   --container-shadow: rgba(#131c31, 0.2) 0px 7px 29px 0px;
+  --sidebarbck: #1f0726;
 }
-.app {
-  display: flex;
-  flex-direction: column;
-}
+
 .svg-container {
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 20px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .book-svg {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   transition: transform 0.5s ease-in-out;
   animation: floatAnimation 3s infinite ease-in-out;
 
-}@keyframes floatAnimation {
-  0%, 100% {
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
+
 .bubble-button {
   background: none;
   border: none;
@@ -71,13 +76,15 @@ body.dark {
 
 .bubble-link:hover {
   background-color: #1c2339;
-}/* Estilos generales del contenedor del chat */
+}
+
+/* Estilos generales del contenedor del chat */
 /* Estilos generales del contenedor del chat */
 .react-chatbot-kit-chat-container {
   font-family: Arial, sans-serif;
   width: 250px;
-  height: 250px; 
-  max-height: 80vh; 
+  height: 250px;
+  max-height: 80vh;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -88,8 +95,10 @@ body.dark {
   right: 50px;
   bottom: 130px;
   transition: bottom 0.3s ease-in-out;
-  overflow-y: auto; /* Changed to overflow-y to allow vertical scrolling */
-  scroll-behavior: smooth; /* Added smooth scrolling behavior */
+  overflow-y: auto;
+  /* Changed to overflow-y to allow vertical scrolling */
+  scroll-behavior: smooth;
+  /* Added smooth scrolling behavior */
 }
 
 /* Estilos del encabezado del chat */
@@ -106,6 +115,7 @@ body.dark {
 .react-chatbot-kit-chat-message-container {
   padding: 10px;
 }
+
 /* Estilos de los mensajes del bot */
 .react-chatbot-kit-chat-bot-message-container {
   display: flex;
@@ -166,12 +176,15 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  align-self: flex-end; /* Alinea el input al final del contenedor */
+  align-self: flex-end;
+  /* Alinea el input al final del contenedor */
 }
+
 .react-chatbot-kit-chat-input-form {
   display: flex;
   align-items: center;
-  width: 100%; /* Make the input take the full width */
+  width: 100%;
+  /* Make the input take the full width */
 }
 
 .react-chatbot-kit-chat-input {
@@ -188,7 +201,8 @@ body.dark {
   border-radius: 5px;
   padding: 6px 10px;
   cursor: pointer;
-  margin-top: 8px; /* Add some space between the input and the send button */
+  margin-top: 8px;
+  /* Add some space between the input and the send button */
 }
 
 @media screen and (max-width: 768px) {
@@ -196,8 +210,8 @@ body.dark {
   .react-chatbot-kit-chat-container {
     font-family: Arial, sans-serif;
     width: 190px;
-    height: 190px; 
-    max-height: 80vh; 
+    height: 190px;
+    max-height: 80vh;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -208,10 +222,12 @@ body.dark {
     right: 50px;
     bottom: 130px;
     transition: bottom 0.3s ease-in-out;
-    overflow-y: auto; /* Changed to overflow-y to allow vertical scrolling */
-    scroll-behavior: smooth; /* Added smooth scrolling behavior */
+    overflow-y: auto;
+    /* Changed to overflow-y to allow vertical scrolling */
+    scroll-behavior: smooth;
+    /* Added smooth scrolling behavior */
   }
 
-  
-  
+
+
 }

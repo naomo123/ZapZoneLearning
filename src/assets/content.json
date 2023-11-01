@@ -1,117 +1,119 @@
 {
-    "cards": [
-        {
-            "title": "Promotion of Active Learning",
-            "content": "The main goal was to establish an interactive platform that enables individuals to immerse themselves in a journey of active learning, driven by hands-on exercises.",
-            "image":"icono1.svg"
-        },
-        {
-            "title": "Supporting Fellow Learners",
-            "content":"The core purpose was to offer a valuable hub for all those seeking effective, self-directed education, providing guidance and resources to diverse learners.",
-            "image":"icon2.svg"
-        },
-        {
-            "title": "Hands-On Coding",
-            "content": "Experience Lightning Network by typing and executing actual code with syntax highlighting",
-            "image":"icono3.svg"
-         
-        },
-        {
-            "title": "Engaging Experience",
-            "content": "Our passion lies in creating an immersive, understandable learning journey.",
-            "image":"icono4.svg"
-        
-        },
-        {
-            "title": "Igniting Curiosity",
-            "content": " By granting free access and content suitable for learners of varying proficiency levels, the ambition was to ignite curiosity and enthusiasm for continuous learning.",
-            "image":"icono5.svg"
-        
-        }
-
-    ],
-    "list":[
-
-        {
-            "title": "A Spectrum of Cool Subjects",
-            "content": "Through our \"type and execute code yourself\" approach, you'll immerse yourself in practical and interactive learning. Engage with real-time exercises for a deeper understanding."
-            
-        },
-        {
-            "title": "Hands-On Experience",
-            "content":"LightningLearn offers a complete learning immersion. Engage in tasks, challenges, lessons, and quizzes that refine your Lightning Network skill"
-        },
-        {
-            "title": "Real-time Practice Access",
-            "content": "We offer the opportunity to work on real-time exercises and simulations. This allows you to directly apply your knowledge and experience Lightning Network in a secure environment."
-            
-         
-        }
-
-
-    ],
-    "resources":[
-
-        {
-            "title": "The Bitcoin Lightning Network:\n Scalable Off-Chain Instant Payments",
-            "content": "https://lightning.network/lightning-network-paper.pdf"
-            
-            
-        },
-        {
-            "title": "What is Linux?",
-            "content": "https://www.linux.com/what-is-linux/"
-            
-            
-        }
-
-
-    ],
-    "generalContent": {
-        "title": "ZapZone Learning",
-        "btn-start": "START",
-        "question": "Why ZapZone Learning?"
+  "cards": [
+    {
+      "title": "Promotion of Active Learning",
+      "content": "The main goal was to establish an interactive platform that enables individuals to immerse themselves in a journey of active learning, driven by hands-on exercises.",
+      "image": "icono1.svg"
     },
-    "implementations": [
-        {
-            "title": "Core Lightning (previously c-lightning) ",
-            "content": "is a lightweight, highly customizable and standard compliant implementation of the Lightning Network protocol.",
-            "link": "https://github.com/lightningnetwork/lnd",
-            "linkroute":"/deploy/cln"
-            
-        },
-        {
-            "title": "Eclair",
-            "content": "Eclair (French for Lightning) is a Scala implementation of the Lightning Network.",
-            "link": "https://github.com/ACINQ/eclair#installing-eclair",
-            "linkroute":"/deploy/eclair"
-        },
-        
-
-        {
-            "title": "The Lightning Network Daemon",
-            "content": "is a complete implementation of a Lightning Network node. lnd has several pluggable back-end chain services including btcd (a full-node), bitcoind, and neutrino (a new experimental light client)",
-            "link": "https://github.com/ElementsProject/lightning",
-            "linkroute":"/deploy/lnd"
-        }
-    ],
-
+    {
+      "title": "Supporting Fellow Learners",
+      "content": "The core purpose was to offer a valuable hub for all those seeking effective, self-directed education, providing guidance and resources to diverse learners.",
+      "image": "icon2.svg"
+    },
+    {
+      "title": "Hands-On Coding",
+      "content": "Experience Lightning Network by typing and executing actual code with syntax highlighting",
+      "image": "icono3.svg"
+    },
+    {
+      "title": "Engaging Experience",
+      "content": "Our passion lies in creating an immersive, understandable learning journey.",
+      "image": "icono4.svg"
+    },
+    {
+      "title": "Igniting Curiosity",
+      "content": " By granting free access and content suitable for learners of varying proficiency levels, the ambition was to ignite curiosity and enthusiasm for continuous learning.",
+      "image": "icono5.svg"
+    }
+  ],
+  "list": [
+    {
+      "title": "A Spectrum of Cool Subjects",
+      "content": "Through our \"type and execute code yourself\" approach, you'll immerse yourself in practical and interactive learning. Engage with real-time exercises for a deeper understanding."
+    },
+    {
+      "title": "Hands-On Experience",
+      "content": "LightningLearn offers a complete learning immersion. Engage in tasks, challenges, lessons, and quizzes that refine your Lightning Network skill"
+    },
+    {
+      "title": "Real-time Practice Access",
+      "content": "We offer the opportunity to work on real-time exercises and simulations. This allows you to directly apply your knowledge and experience Lightning Network in a secure environment."
+    }
+  ],
+  "resources": [
+    {
+      "title": "The Bitcoin Lightning Network:\n Scalable Off-Chain Instant Payments",
+      "content": "https://lightning.network/lightning-network-paper.pdf"
+    },
+    {
+      "title": "What is Linux?",
+      "content": "https://www.linux.com/what-is-linux/"
+    }
+  ],
+  "generalContent": {
+    "title": "ZapZone Learning",
+    "btn-start": "START",
+    "question": "Why ZapZone Learning?"
+  },
+  "implementations": [
+    {
+      "title": "Core Lightning (previously c-lightning) ",
+      "content": "is a lightweight, highly customizable and standard compliant implementation of the Lightning Network protocol.",
+      "link": "https://github.com/lightningnetwork/lnd",
+      "linkroute": "/deploy/cln"
+    },
+    {
+      "title": "Eclair",
+      "content": "Eclair (French for Lightning) is a Scala implementation of the Lightning Network.",
+      "link": "https://github.com/ACINQ/eclair#installing-eclair",
+      "linkroute": "/deploy/eclair"
+    },
+    {
+      "title": "The Lightning Network Daemon",
+      "content": "is a complete implementation of a Lightning Network node. lnd has several pluggable back-end chain services including btcd (a full-node), bitcoind, and neutrino (a new experimental light client)",
+      "link": "https://github.com/ElementsProject/lightning",
+      "linkroute": "/deploy/lnd"
+    }
+  ],
+  
     "steps": {
-        "Step 1": "Run the following command to clear the terminal:\nclear",
-        "Step 2": "Install the snapd package using the following command:\nsudo apt-get install snapd -y",
-        "Step 3": "Install the bitcoin-core client using snap:\nsudo snap install bitcoin-core",
-        "Step 4": "Create a symbolic link to access Bitcoin Core binaries:\nsudo ln -s /snap/bitcoin-core/current/bin/bitcoin{d,-cli} /usr/local/bin/",
-        "Step 5": "Clone the Lightning Network repository from GitHub:\ngit clone https://github.com/ElementsProject/lightning.git",
-        "Step 6": "Update the system and then install necessary packages for compilation:\n sudo apt-get update sudo apt-get install -y autoconf automake build-essential git libtool libsqlite3-dev python3 python3-pip net-tools zlib1g-dev libsodium-dev gettext pip3 install --upgrade pip pip3 install --user poetry",
-        "Step 8": "Configure and compile the Lightning Network source code:\n. /configure --enable-developer && make -j7 && make install",
-        "Step 9": "Create a directory to store Bitcoin data:\nmkdir ~/.bitcoin",
-        "Step 10": "Run the script to start a Bitcoin regtest network:\n. contrib/startup_regtest.sh",
-        "Step 11": "Start the Lightning Network daemon with 2 nodes:\nstart_ln 2",
-        "Step 12": "Generate 10 blocks in the Bitcoin regtest blockchain:\nbt-cli generatetoaddress 10 $(bt-cli getnewaddress)",
-        "Step 13": "Get the balances of Bitcoin addresses:\nbt-cli getbalances",
-        "Step 14": "Get information about the Lightning Network node:\nl2-cli getinfo",
-        "Step 15": "Connect to the first Lightning Network node:\nl1-cli connect 027530d124566d735277cf74dd030b7ef6fba8f671e67ecd48075827989d977600@127.0.0.1:7272",
-        "Step 16": "List the connected peers of the first node:\nl1-cli listpeers"
-      }
-    
+      "Step 1": "Clear the terminal: clear",
+      "Step 2": "Install the snapd package: sudo apt-get install snapd -y",
+      "Step 3": "Install the Bitcoin Core client using snap: sudo snap install bitcoin-core",
+      "Step 4": "Create symbolic links to access Bitcoin Core binaries: sudo ln -s /snap/bitcoin-core/current/bin/bitcoind /usr/local/bin/ && sudo ln -s /snap/bitcoin-core/current/bin/bitcoin-cli /usr/local/bin/",
+      "Step 5": "Clone the Lightning Network repository from GitHub: git clone https://github.com/ElementsProject/lightning.git",
+      "Step 6": "Update the system and install necessary packages for compilation: sudo apt-get update && sudo apt-get install -y autoconf automake build-essential git libtool libsqlite3-dev python3 python3-pip net-tools zlib1g-dev libsodium-dev gettext && pip3 install --upgrade pip && pip3 install --user poetry",
+      "Step 8": "Configure and compile the Lightning Network source code: cd lightning && ./configure --enable-developer && make -j7 && make install",
+      "Step 9": "Create a directory to store Bitcoin data: mkdir ~/.bitcoin",
+      "Step 10": "Run the script to start a Bitcoin regtest network: . contrib/startup_regtest.sh",
+      "Step 11": "Start the Lightning Network daemon with 2 nodes: start_ln 2",
+      "Step 12": "Generate 10 blocks in the Bitcoin regtest blockchain: bt-cli generatetoaddress 10 $(bt-cli getnewaddress)",
+      "Step 13": "Get the balances of Bitcoin addresses: bt-cli getbalances",
+      "Step 14": "Get information about the Lightning Network node: l2-cli getinfo",
+      "Step 15": "Connect to the first Lightning Network node: l1-cli connect 027530d124566d735277cf74dd030b7ef6fba8f671e67ecd48075827989d977600@127.0.0.1:7272",
+      "Step 16": "List the connected peers of the first node: l1-cli listpeers",
+      "Step 17": "Get a new Bitcoin address: l1-cli newaddr",
+      "Step 18": "Send 1 BTC to the specified address: bt-cli sendtoaddress bcrt1qxlgkw57ue298lmtt4xpzstalgzzh8gmg3pgvke 1 btc",
+      "Step 19": "Generate 10 blocks to the specified Bitcoin Core address: bt-cli generatetoaddress 10 $(bt-cli getnewaddress)",
+      "Step 21": "Send 0.0005 BTC to the specified address: bt-cli sendtoaddress bcrt1qhgh2e65ktgzl945fyx7ea2cj39m08d2e6gegse 0.0005 btc",
+      "Step 22": "Generate 10 blocks to a new Bitcoin address: bt-cli generatetoaddress 10 $(bt-cli getnewaddress)",
+      "Step 23": "List funds for the second Lightning Network node: l2-cli listfunds",
+      "Step 24": "Get information about the second Lightning Network node: l2-cli getinfo",
+      "Step 25": "Fund a Lightning channel from the first node to the second node: l1-cli fundchannel 027530d124566d735277cf74dd030b7ef6fba8f671e67ecd48075827989d977600 500000sat",
+      "Step 26": "List channels for the first node: l1-cli listchannels",
+      "Step 27": "Generate 12 blocks to a new Bitcoin address: bt-cli generatetoaddress 12 $(bt-cli getnewaddress)",
+      "Step 28": "List channels for the first node: l1-cli listchannels",
+      "Step 29": "Fund a Lightning channel from the second node to the first node: l2-cli fundchannel 0212e254cf5a6fd9074c40d0d86b95ada6576443ab4e275188e7a25bb920efc57e 20000sat",
+      "Step 30": "Generate 12 blocks to a new Bitcoin address: bt-cli generatetoaddress 12 $(bt-cli getnewaddress)",
+      "Step 31": "List channels for the second node: l2-cli listchannels",
+      "Step 32": "Create an invoice for the second node: l2-cli invoice 100sat payme 'payme'",
+      "Step 33": "Make a payment from the first node to the second node: l1-cli pay",
+      "Step 34": "Create an invoice for the first node: l1-cli invoice 100sat payme 'payme'",
+      "Step 35": "Make a payment from the second node to the first node: l2-cli pay",
+      "Step 36": "List funds for the first node: l1-cli listfunds",
+        "Step 37": "List funds for the second node: l2-cli listfunds",
+        "Step 38": "List channels for the first node: l1-cli listchannels",
+      "Step 39": "List channels for the second node: l2-cli listchannels"
+    }
+   
 }

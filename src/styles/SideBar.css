@@ -1,24 +1,16 @@
-
-
 .sidebar-container {
-  background-color: var(--main-container-bg);
-  box-shadow: var(--container-shadow);
+  background-color: var(--sidebarbck);
   border-radius: 10px;
-  transition: width 0.3s ease-in-out;
   width: 80px;
   height: auto;
   padding: 10px;
-  position: absolute;
+    position: fixed; 
+  
   top: 50%;
-  left: 0;
   display: block;
-  transform: translateY(-50%);
-  z-index: 9999;
-  flex: 0 0 80px; 
+  left: 0;
+  flex: 0 0 80px;
   transition: flex 0.3s ease-in-out;
-  align-items: center;
-  transition: width 0.3s ease;
-  overflow-x: hidden;
 }
 
 
@@ -30,8 +22,8 @@
   margin: 5px;
   gap: 5px;
   padding: 10px;
-  align-items: center ;
- 
+  align-items: center;
+
 }
 
 
@@ -57,13 +49,13 @@
   border-radius: 4px;
   color: var(--text-color);
   display: flex;
-  width:50px;
+  width: 50px;
   margin-right: 4px;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 
 .sidebar-themeLabel {
@@ -102,42 +94,39 @@
   font-size: 16px;
   text-decoration: none;
 }
-.icons{
+
+.icons {
   width: 35px;
   height: 35px;
 }
-.icons-theme{
+
+.icons-theme {
   width: 30px;
   height: 30px;
 }
 
 .icons .custom-path {
- 
+
   fill: var(--icon-fill-color);
   stroke: var(--icon-fill-color);
 }
 
-.icons-theme .custom-path{
+.icons-theme .custom-path {
 
   stroke: var(--icon-fill-color);
-  
+
 }
 
 
 .sidebar-container.shrink {
-  width: 40px;
+  transform: translateX(-90%);
+  left: auto;
+  transition: transform 0.3s, left 0.3s;
 }
 
 
-.sidebar-container .shrink .sidebar-wrapper,
-.sidebar-container.shrink .icons,
-.sidebar-container.shrink .icons-theme,
-.sidebar-container.shrink .sidebar-listItem,
-.sidebar-container .shrink .sidebar-themeContainer
-{
-  display: none;
-}
-.btn{
+
+.btn {
   width: 100%;
   height: 100%;
   border: none;
@@ -149,6 +138,7 @@
   cursor: pointer;
   z-index: 2;
 }
+
 @keyframes fadeInItem {
   100% {
     transform: translatex(0px);
@@ -158,23 +148,27 @@
 
 @media (max-width: 899px) {
   .sidebar-container {
-    width:60px;
-    height:auto;
+    width: 60px;
+    height: auto;
   }
-  .icons{
+
+  .icons {
     width: 30px;
     height: 30px;
   }
-  .icons-theme{
+
+  .icons-theme {
     width: 25px;
     height: 25px;
   }
-  .icons .custom-path{
-  
+
+  .icons .custom-path {
+
     stroke-width: 0.5px;
   }
+
   .icons-theme .custom-path {
-    
+
     stroke-width: 2px;
   }
 
@@ -183,48 +177,85 @@
   }
 
   .sidebar-listItem {
-    
+
     justify-content: flex-start;
     align-items: center;
   }
-.sidebar-themeContainer{
-  width:40px;
+
+  .sidebar-themeContainer {
+    width: 40px;
+
+  }
 
 }
 
-}.sidebar-button-container {
+.sidebar-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 0px; 
-  padding-top: 10px; 
-  height: auto; 
+  padding-right: 0px;
+  padding-top: 10px;
+  height: auto;
   padding-bottom: 5px;
 }
 
 .sidebar-button-container .btn {
-  width: 40px; 
-  height: 40px; 
+  width: 40px;
+  height: 40px;
 }
+
 .button-outside-sidebar {
-  position: absolute; 
-  top: 50%; 
-  right: 40px; 
+  position: absolute;
+  top: 50%;
+  right: 40px;
   transform: translateY(-50%);
   z-index: 10000;
 }
 
- .icon-v{
+.sidebar-viewButton {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  right: -10px;
+  top: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+  box-shadow: var(--container-shadow);
+  background-color: var(--icon-fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-viewButton:hover {
+  opacity: 0.8;
+}
+
+.sidebar-viewButton svg {
+  width: 16px;
+}
+
+.shrink .sidebar-viewButton {
+  transform: rotatey(-180deg);
+}
+
+.icon-v {
   width: 20px;
   height: 35px;
   fill: var(--icon-fill-color);
   stroke: var(--icon-fill-color);
- }
- 
- @media (max-width: 768px) {
-.icon-v{
-  width: 20px;
-  height: 35px;
 }
 
- }
+@media (max-width: 768px) {
+  .icon-v {
+    width: 20px;
+    height: 35px;
+  }
+
+}
