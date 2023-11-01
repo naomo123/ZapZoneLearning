@@ -180,7 +180,7 @@ const CLN = () => {
           }
         }, 10);
       } else {
-        const newOutput = [...output, `root@linux:/ ${trimmedInput}`, <span className="error"> Comando no reconocido: ${trimmedInput} </span>];
+        const newOutput = [...output, `root@linux:/ ${trimmedInput}`, <span className="error"> Unrecognized command: ${trimmedInput} </span>];
         setOutput(newOutput);
       }
 
