@@ -80,7 +80,7 @@
       "Step 1": "Clear the terminal: clear",
       "Step 2": "Install the snapd package: sudo apt-get install snapd -y",
       "Step 3": "Install the Bitcoin Core client using snap: sudo snap install bitcoin-core",
-      "Step 4": "Create symbolic links to access Bitcoin Core binaries: sudo ln -s /snap/bitcoin-core/current/bin/bitcoind /usr/local/bin/ && sudo ln -s /snap/bitcoin-core/current/bin/bitcoin-cli /usr/local/bin/",
+      "Step 3": "Create symbolic links to access Bitcoin Core binaries: sudo ln -s /snap/bitcoin-core/current/bin/bitcoind /usr/local/bin/",
       "Step 5": "Clone the Lightning Network repository from GitHub: git clone https://github.com/ElementsProject/lightning.git",
       "Step 6": "Update the system and install necessary packages for compilation: sudo apt-get update && sudo apt-get install -y autoconf automake build-essential git libtool libsqlite3-dev python3 python3-pip net-tools zlib1g-dev libsodium-dev gettext && pip3 install --upgrade pip && pip3 install --user poetry",
       "Step 8": "Configure and compile the Lightning Network source code: cd lightning && ./configure --enable-developer && make -j7 && make install",
